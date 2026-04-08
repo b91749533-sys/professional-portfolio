@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Professional portfolio of Youssef Manssouri." />
+    <title>Youssef Manssouri | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand-mark" aria-hidden="true">YM</span>
+          <span class="brand-name">Youssef Manssouri</span>
+        </a>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Frontend Developer</p>
+            <h1 class="hero-title">
+              Hi, I’m <span class="accent">Youssef</span>. I build fast, accessible web
+              interfaces.
+            </h1>
+            <p class="hero-subtitle">
+              Modern HTML, CSS (Flexbox/Grid), and vanilla JavaScript — crafted with
+              performance and usability in mind.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="hero-card" role="img" aria-label="Profile placeholder">
+            <div class="hero-card-inner">
+              <div class="avatar" aria-hidden="true"></div>
+              <div class="hero-meta">
+                <p class="hero-meta-title">Available for freelance</p>
+                <p class="hero-meta-text">Open to collaborations & new roles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Projects</h2>
+            <p class="muted">A few examples of what I can build.</p>
+          </header>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3 class="project-title">Project One</h3>
+                <p class="project-desc">
+                  Responsive landing page with a strong layout, accessible components,
+                  and clean typography.
+                </p>
+                <a class="project-link" href="#" aria-label="View Project One">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3 class="project-title">Project Two</h3>
+                <p class="project-desc">
+                  UI concept for a dashboard using CSS Grid, hover micro-interactions,
+                  and clear visual hierarchy.
+                </p>
+                <a class="project-link" href="#" aria-label="View Project Two">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3 class="project-title">Project Three</h3>
+                <p class="project-desc">
+                  Portfolio template optimized for performance, with semantic HTML and
+                  accessible navigation.
+                </p>
+                <a class="project-link" href="#" aria-label="View Project Three">View Project</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div>
+            <header class="section-header">
+              <h2>About</h2>
+              <p class="muted">A quick intro and the tools I use.</p>
+            </header>
+            <p class="about-text">
+              I’m a frontend developer focused on building polished, responsive, and
+              accessible websites. I enjoy turning ideas into interfaces that feel
+              simple, fast, and professional.
+            </p>
+            <p class="about-text">
+              I care about semantic HTML, modern CSS, and writing JavaScript that is
+              easy to maintain.
+            </p>
+          </div>
+
+          <div class="skills-panel" aria-label="Technical skills">
+            <h3 class="skills-title">Technical Skills</h3>
+            <ul class="skills-list">
+              <li>HTML5 (semantic, accessible)</li>
+              <li>CSS3 (Flexbox, Grid, responsive)</li>
+              <li>Vanilla JavaScript (DOM, events)</li>
+              <li>Performance & accessibility basics</li>
+              <li>Git / GitHub workflow</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <header class="section-header centered">
+            <h2>Contact</h2>
+            <p class="muted">Send a message and I’ll get back to you.</p>
+          </header>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                inputmode="email"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Send Message</button>
+            <p class="form-hint muted" id="formHint">
+              This demo shows an alert (no backend connected).
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <p class="muted">&copy; <span id="year">2026</span> Youssef Manssouri</p>
+        <div class="footer-links" aria-label="Social links">
+          <a href="#" class="footer-link">LinkedIn</a>
+          <a href="#" class="footer-link">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youssef Manssouri | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#" class="logo">YM</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <p class="tag">Web Developer</p>
+        <h1>Hi, I'm Youssef Manssouri.</h1>
+        <p class="intro">
+          I build simple, clean, and responsive websites with HTML and CSS.
+        </p>
+        <a href="#projects" class="btn">View My Work</a>
+      </section>
+
+      <section id="about" class="section container">
+        <h2>About Me</h2>
+        <p>
+          I am passionate about creating modern web experiences. I focus on
+          writing clean code and designing interfaces that are both user-friendly
+          and visually pleasing.
+        </p>
+      </section>
+
+      <section id="projects" class="section container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <h3>Landing Page</h3>
+            <p>
+              A responsive landing page for a startup with a clear call to
+              action and smooth layout.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Personal Blog UI</h3>
+            <p>
+              A minimalist blog interface focused on readability and clean
+              typography.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Portfolio Concept</h3>
+            <p>
+              A creative portfolio mockup showcasing sections, cards, and
+              responsive behavior.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <h2>Contact</h2>
+        <p>Want to work together? Reach out at:</p>
+        <a class="email" href="mailto:youssef@example.com">youssef@example.com</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Youssef Manssouri. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
